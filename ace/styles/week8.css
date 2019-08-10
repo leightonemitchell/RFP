@@ -1,0 +1,172 @@
+main {
+    width:1024px;
+    margin:auto;
+}
+
+h1,h2 {
+    text-align:center;
+}
+
+.gallery-photos {
+    border: 2px solid black;
+    height: 435px;
+    padding: 4px;
+}
+
+.thumbnail {
+    float:left;
+    width: 300px;
+}
+
+.thumbnail img {
+    float:left;
+    width: 144px;
+    padding: 0;
+    margin: 2px;
+    border: 1px solid purple;
+}
+
+.bigPhoto {
+    float:right;
+    background-color:#fff;
+    border:1px solid #e7e7e7;
+    padding:3px;
+}
+
+.bigPhoto img {
+    float:left;
+    width:690px;
+    height:auto;
+    margin:0;
+    padding:0;
+}
+
+img {
+    display:inline;
+}
+
+.photo-thumbnails {
+    border:1px solid blue;
+    width:40%;
+}
+
+.photo-thumbnails img {
+    float:left;
+    margin:2px;
+}
+
+.photo-thumbnails .thumbnail.current {
+    opacity:1;
+    background-color:#fff;
+}
+
+#caption {
+    text-align:center;
+    font-style:italic;
+}
+
+/* Hamburger menu */
+
+header {
+    width:100%;
+    background:#fff;
+    position:absolute;
+    top:0;
+    left:0;
+    display:inline-block;
+    font-size:12px;
+}
+
+.hamburger {
+    background:none;
+    position:absolute;
+    top:0;
+    right:0;
+    line-height:45px;
+    color:#999;
+    border:0;
+    font-size:1.4em;
+    font-weight:700;
+    cursor:pointer;
+    outline:none;
+    z-index:10;
+    padding:5px 15px 0;
+}
+
+.cross {
+    background:none;
+    position:absolute;
+    top:0;
+    right:0;
+    color:#999;
+    border:0;
+    font-size:3em;
+    line-height:65px;
+    font-weight:700;
+    cursor:pointer;
+    outline:none;
+    z-index:10;
+    padding:7px 15px 0;
+}
+
+.menu {
+    z-index:10;
+    font-weight:700;
+    width:50%;
+    background:#f1f1f1;
+    position:absolute;
+    top:50px;
+    right:0;
+    text-align:center;
+    font-size:12px;
+}
+
+.menu ul {
+    list-style-type:none;
+    list-style-image:none;
+    margin:0;
+    padding:0;
+}
+
+.menu li {
+    display:block;
+    border-bottom:#ddd 1px solid;
+    padding:15px 0;
+}
+
+.menu li:hover {
+    display:block;
+    background:#fff;
+    border-bottom:#ddd 1px solid;
+    padding:15px 0;
+}
+
+.menu ul li a {
+    text-decoration:none;
+    color:#666;
+    margin:0;
+}
+
+.menu ul li a:hover {
+    color:#666;
+    text-decoration:none;
+}
+
+.glyphicon-home {
+    color:#FFF;
+    font-size:1.5em;
+    margin:0 auto;
+}
+
+span {
+    padding-left:20px;
+}
+
+a {
+    color:#369;
+}
+
+.menu a,.menu a:hover {
+    text-decoration:none;
+    color:#666;
+}
