@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Ace in the Hole Multisport Events">
+	  <meta name="keywords" content="sports, events, multisport">
+  	<meta name="author" content="Leighton Mitchell">
+    <title>Ace in the Hole Multisport Events | Welcome</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Ace</span> in the Hole Multisport Events</h1>
+        </div>
+ <nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+
+    <ul class="navbar-nav">
+      <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="details.html">Event Details</a></li>
+            <li><a href="registration.html">Registration</a></li>
+              <li><a href="volunteers.html">Volunteers</a></li>
+    </ul>
+  </nav>
+
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="#">Home</a>
+    <a href="#">Event Details</a>
+    <a href="#">Registration</a>
+    <a href="#">Volunteers</a>
+  </div>
+      </div>
+    </header>
+
+    <section id="showcase">
+      <div class="container">
+        <h1>Ace in the Hole Multisport Events</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu luctus ipsum, rhoncus semper magna. Nulla nec magna sit amet sem interdum condimentum.</p>
+      </div>
+    </section>
+
+    <section id="boxes">
+      <div class="container">
+        <div class="box">
+          <img src="./img/logo_brush.png">
+          <h3>image</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+        </div>
+        <div class="box">
+          <img src="./img/logo_brush.png">
+          <h3>image</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+        </div>
+        <div class="box">
+          <img src="./img/logo_brush.png">
+          <h3>image</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Ace in the Hole Multisport Events, Copyright &copy; 2019</p>
+        <div class="box">
+          <img src="./img/icons8-facebook-26.png">
+        <img src="./img/icons8-twitter-30.png">
+          </div>
+    </footer>
+       <script>
+    function openSlideMenu(){
+      document.getElementById('side-menu').style.width = '250px';
+      document.getElementById('main').style.marginLeft = '250px';
+    }
+
+    function closeSlideMenu(){
+      document.getElementById('side-menu').style.width = '0';
+      document.getElementById('main').style.marginLeft = '0';
+    }
+  </script>
+  </body>
+</html>
