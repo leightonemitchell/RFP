@@ -30,7 +30,7 @@
       <li class="current"><a href="index.html">Home</a></li>
             <li><a href="details.html">Event Details</a></li>
             <li><a href="registration.html">Registration</a></li>
-              <li><a href="volunteers.html">Volunteers</a></li>
+              <li><a href="volunteers.html">Volunteers/Contact</a></li>
     </ul>
   </nav>
 
@@ -39,7 +39,7 @@
     <a href="index.html">Home</a>
     <a href="details.html">Event Details</a>
     <a href="registration.html">Registration</a>
-    <a href="volunteers.html">Volunteers</a>
+    <a href="volunteers.html">Volunteers/Contact</a>
   </div>
       </div>
     </header>
@@ -47,36 +47,83 @@
     <section id="showcase">
       <div class="container">
         <h1>Registration</h1>
-        <p>Enter information here and submit to register. Confirmation email will be sent within 24 hours.</p>
+        <p>Enter information here and submit to register. Note Gender Identification (Female, Male, Non-binary) and any special accommodations you may require. Confirmation email will be sent within 24 hours.</p>
       </div>
     </section>
-
-    <section id="boxes">
-      <div class="container">
-         
-        <form action="registration_form.php" method="post">
-             <div class="bx1">
-    <label for="rname">Name</label>
-    <input type="text" id="name" name="name" placeholder="Your name..">
-            </div>
-<div class="bx1">
-    <label for="re-mail">E-mail</label>
-    <input type="text" id="email" name="email" placeholder="Your e-mail..">
-            </div>
-            <div class="bx1">
-    <label for="event">Event</label>
-    <input type="text" id="event" name="event" placeholder="event..">
-            </div>
-            <div class="bx1">
-    <label for="comment">Info</label>
-    <textarea id="comment" name="comment">Tell us about yourself.</textarea>
-            </div>
-            
-    <input type="submit" value="Submit">
+       <main>
+        <form name="contactform" method="post" action="send_contact_email.php">
+<table width="450px">
+<tr>
+ <td valign="top">
+  <label for="first_name">First Name *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="first_name" maxlength="50" size="30">
+ </td>
+</tr>
+    <tr>
+ <td valign="top">
+  <label for="first_name">Last Name *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="last_name" maxlength="50" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="email">Email Address *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="email" maxlength="80" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="telephone">Emergency Contact Number</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="telephone" maxlength="30" size="30">
+ </td>
+</tr>
+    <tr>
+ <td valign="top">
+  <label for="gid">Gender Identification</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="gid" maxlength="30" size="30">
+ </td>
+</tr>
+    <tr>
+ <td valign="top">
+  <label for="age">Age</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="age" maxlength="30" size="30">
+ </td>
+</tr>
+    <tr>
+ <td valign="top">
+  <label for="event">Event</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="event" maxlength="30" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="sacc">Special Accomodations *</label>
+ </td>
+ <td valign="top">
+  <textarea  name="sacc" maxlength="1000" cols="25" rows="6"></textarea>
+ </td>
+</tr>
+<tr>
+ <td colspan="2" style="text-align:center">
+  <input type="submit" value="Submit">  
+ </td>
+</tr>
+</table>
 </form>
-      </div>
-    </section>
-      <main>
         <h1>REGISTRATION</h1>
         <span id="about">
         </span>
@@ -112,7 +159,8 @@
           <td headers="coursename">Try-a-Tri</td>
           <td headers="tourduration">$65</td>
         </tr>
-      </table>      
+      </table> 
+          <main>
       <h1>Cost Includes</h1>
         <p>Food & Beer<br> 
     Access to the weekend is live entertainment & Fitness Expo<br>
@@ -155,10 +203,10 @@
     <footer>
       <p>Ace in the Hole Multisport Events, Copyright &copy; 2019</p>
         <div class="box">
-          <a href="http:www.facebook.com">
+          <a href="http://www.facebook.com">
           <img src="./img/icons8-facebook-26.png">
         </a>
-        <a href="http:www.twitter.com">
+        <a href="http://www.twitter.com">
         <img src="./img/icons8-twitter-30.png">
       </a>
           </div>
